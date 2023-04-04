@@ -16,7 +16,7 @@ export default function Home() {
   const particlesLoaded = useCallback(async container => {
     await console.log(container);
   }, []);
-  
+
   return (
     <>
       <Head>
@@ -27,79 +27,99 @@ export default function Home() {
       </Head>
       <main>
         <div className='w-full h-screen absolute -z-10'>
-        <Particles
+          <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                background: {
-                    color: {
-                        value: "#218380",
-                    },
+              background: {
+                color: {
+                  value: "#0f766e",
                 },
-                fpsLimit: 120,
-                interactivity: {
-                    events: {
-                        resize: true,
-                    },
-                    modes: {
-                        push: {
-                            quantity: 4,
-                        },
-                        repulse: {
-                            distance: 200,
-                            duration: 0.4,
-                        },
-                    },
+              },
+              fpsLimit: 120,
+              interactivity: {
+                events: {
+                  resize: true,
                 },
-                particles: {
-                    color: {
-                        value: "#ffffff",
-                    },
-                    links: {
-                        color: "#ffffff",
-                        distance: 150,
-                        enable: true,
-                        opacity: 0.5,
-                        width: 1,
-                    },
-                    collisions: {
-                        enable: true,
-                    },
-                    move: {
-                        direction: "none",
-                        enable: true,
-                        random: false,
-                        speed: 3,
-                        straight: false,
-                    },
-                    number: {
-                        density: {
-                            enable: true,
-                            area: 800,
-                        },
-                        value: 70,
-                    },
-                    opacity: {
-                        value: 0.5,
-                    },
-                    shape: {
-                        type: "circle",
-                    },
-                    size: {
-                        value: { min: 1, max: 5 },
-                    },
+                modes: {
+                  push: {
+                    quantity: 4,
+                  },
+                  repulse: {
+                    distance: 200,
+                    duration: 0.4,
+                  },
                 },
-                detectRetina: true,
+              },
+              particles: {
+                color: {
+                  value: "#ffffff",
+                },
+                links: {
+                  color: "#ffffff",
+                  distance: 150,
+                  enable: true,
+                  opacity: 0.5,
+                  width: 1,
+                },
+                collisions: {
+                  enable: true,
+                },
+                move: {
+                  direction: "none",
+                  enable: true,
+                  random: false,
+                  speed: 3,
+                  straight: false,
+                },
+                number: {
+                  density: {
+                    enable: true,
+                    area: 800,
+                  },
+                  value: 50,
+                },
+                opacity: {
+                  value: 0.5,
+                },
+                shape: {
+                  type: "circle",
+                },
+                size: {
+                  value: { min: 1, max: 5 },
+                },
+              },
+              detectRetina: true,
             }}
-        />
+          />
         </div>
         <div className='w-full h-screen flex justify-center items-center flex-col gap-8'>
-        <h1 className='text-white text-9xl'>Clements SNHS</h1>
-
+          <h1 className='text-white lg:text-9xl md:text-7xl text-5xl font-bold'>Clements SNHS</h1>
+          <Button>
+            Events
+          </Button>
         </div>
-        <div className='bg-white w-full h-64'>
-          asdfasdfa
+        <div className='bg-teal-600 w-full h-72 flex justify-center items-center px-10 py-32'>
+          <div className='text-white max-w-screen-xl flex flex-col gap-6'>
+            <h2 className='font-bold lg:text-5xl text-3xl'>
+              What is SNHS?
+            </h2>
+            <p className='lg:text-xl text-lg'>SNHS represents a community of individuals that strive to be the next generation of leaders in industry, science, and research. We aim to empower others to lead future innovation through academic ventures and community service.</p>
+          </div>
+        </div>
+        <div className='w-full py-20 bg-teal-600 text-white flex justify-center items-center'>
+          <div className='max-w-screen-xl grow flex flex-row gap-10 justify-between px-10'>
+            <div className='w-[40%] lg:block hidden bg-gray-50 aspect-square'></div>
+            <div className='flex flex-col gap-10 items-center grow'>
+              <h2 className='font-bold lg:text-5xl text-3xl'>
+                UPDATES
+              </h2>
+              <ul className='lg:text-xl text-lg'>
+                <li>The 2022-2023 Interest Meeting is on September 15th in the Downstairs Lecture Hall @3PM!</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </main>
     </>
