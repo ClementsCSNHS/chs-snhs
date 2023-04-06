@@ -64,7 +64,7 @@ export default function Home() {
                   width: 1,
                 },
                 collisions: {
-                  enable: true,
+                  enable: false,
                 },
                 move: {
                   direction: "none",
@@ -100,7 +100,7 @@ export default function Home() {
             Events
           </Button>
         </div>
-        <div className='bg-teal-600 w-full h-72 flex justify-center items-center px-10 py-32'>
+        <div className='bg-teal-600 w-full flex justify-center items-center px-10 py-16'>
           <div className='text-white max-w-screen-xl flex flex-col gap-6'>
             <h2 className='font-bold lg:text-5xl text-3xl'>
               What is SNHS?
@@ -109,13 +109,13 @@ export default function Home() {
           </div>
         </div>
         <div className='w-full py-20 bg-teal-600 text-white flex justify-center items-center'>
-          <div className='max-w-screen-xl grow flex flex-row gap-10 justify-between px-10'>
+          <div className='max-w-screen-xl grow flex flex-row gap-10'>
             <div className='w-[40%] lg:block hidden bg-gray-50 aspect-square'></div>
             <div className='flex flex-col gap-10 items-center grow'>
               <h2 className='font-bold lg:text-5xl text-3xl'>
                 UPDATES
               </h2>
-              <ul className='lg:text-xl text-lg'>
+              <ul className='lg:text-xl text-lg lg:text-center text-left'>
                 <li>The 2022-2023 Interest Meeting is on September 15th in the Downstairs Lecture Hall @3PM!</li>
               </ul>
             </div>

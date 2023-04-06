@@ -8,10 +8,10 @@ export default function Navbar() {
           Home
           <div className='flex flex-row gap-6'>
             <Link href="/" className='hover:underline underline-offset-2 decoration-2 '>Home</Link>
-            <Link href="/" className='hover:underline underline-offset-2 decoration-2 '>Events</Link>
-            <Link href="/" className='hover:underline underline-offset-2 decoration-2 '>Points</Link>
-            <Link href="/" className='hover:underline underline-offset-2 decoration-2 '>Documents</Link>
-            <Link href="/" className='hover:underline underline-offset-2 decoration-2 '>About Us</Link>
+            <Link href="/events" className='hover:underline underline-offset-2 decoration-2 '>Events</Link>
+            <Link href="/points" className='hover:underline underline-offset-2 decoration-2 '>Points</Link>
+            <Link href="/documents" className='hover:underline underline-offset-2 decoration-2 '>Documents</Link>
+            <Link href="/about_us" className='hover:underline underline-offset-2 decoration-2 '>About Us</Link>
           </div>
         </div>
     </nav>
