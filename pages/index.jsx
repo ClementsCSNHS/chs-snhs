@@ -25,8 +25,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main>
-        <div className='w-full h-screen absolute -z-10'>
+        {/* header */}
+        <div className='w-full h-screen absolute -z-10 brightness-50'>
           <Particles
             id="tsparticles"
             init={particlesInit}
@@ -34,7 +36,8 @@ export default function Home() {
             options={{
               background: {
                 color: {
-                  value: "#0f766e",
+                  // value: "#0f766e",
+                  value: "#1e293b"
                 },
               },
               fpsLimit: 120,
@@ -60,8 +63,8 @@ export default function Home() {
                   color: "#ffffff",
                   distance: 150,
                   enable: true,
-                  opacity: 0.5,
-                  width: 1,
+                  opacity: 1,
+                  width: 1.5,
                 },
                 collisions: {
                   enable: false,
@@ -76,12 +79,12 @@ export default function Home() {
                 number: {
                   density: {
                     enable: true,
-                    area: 800,
+                    area: 1000,
                   },
                   value: 50,
                 },
                 opacity: {
-                  value: 0.5,
+                  value: 1,
                 },
                 shape: {
                   type: "circle",
@@ -95,11 +98,15 @@ export default function Home() {
           />
         </div>
         <div className='w-full h-screen flex justify-center items-center flex-col gap-8'>
-          <h1 className='text-white lg:text-9xl md:text-7xl text-5xl font-bold'>Clements SNHS</h1>
+          <h1 className='text-white lg:text-9xl md:text-7xl text-5xl tracking-wider' style={
+            {textShadow: "0 0 14px #06b6d4, 0 0 16px #06b6d4, 0 0 18px #06b6d4"}
+          }>Clements SNHS</h1>
           <Button>
             Events
           </Button>
         </div>
+
+        {/* about */}
         <div className='bg-teal-600 w-full flex justify-center items-center px-10 py-16'>
           <div className='text-white max-w-screen-xl flex flex-col gap-6'>
             <h2 className='font-bold lg:text-5xl text-3xl'>
