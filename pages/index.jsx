@@ -5,6 +5,10 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 
+// FA
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faMoneyBill1, faRectangleList, faUser } from '@fortawesome/free-regular-svg-icons';
+
 // images
 import AboutBg from '../assets/Home/about_bg.jpg';
 
@@ -124,17 +128,56 @@ export default function Home() {
         </div>
 
         {/* updates */}
-        <div className='w-full py-20 bg-slate-800 text-white flex justify-center items-center'>
+        <div className='w-full py-28 px-32 bg-gradient-to-br from-gray-900 to-slate-700 text-white flex justify-center items-center'>
           <div className='max-w-screen-xl grow flex flex-row gap-10'>
             <div className='flex flex-col gap-10 items-center grow'>
-              <h2 className='font-bold lg:text-5xl text-3xl'>
+              <h2 className='font-semibold lg:text-5xl text-3xl tracking-wider mb-8'>
                 UPDATES
               </h2>
-              <ul className='lg:text-xl text-lg lg:text-center text-left'>
-                <li>The 2022-2023 Interest Meeting is on September 15th in the Downstairs Lecture Hall @3PM!</li>
+              <ul className='lg:text-xl text-lg text-left flex flex-col gap-10'>
+                <li className='flex items-center gap-10'>
+                  <div className='shrink-0 w-28 h-28 rounded-full bg-gradient-to-r from-cyan-400 to-teal-600 flex items-center justify-center'>
+                    <FontAwesomeIcon icon={faCalendar} className='w-14 h-14' />
+                  </div>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ad delectus nulla perspiciatis sapiente assumenda doloremque consectetur, debitis modi dolores iusto tenetur. Atque neque vel dicta? Ab, dicta alias? Sapiente!
+                  </p>
+                </li>
+                <li className='flex items-center gap-10'>
+                  <div className='shrink-0 w-28 h-28 rounded-full bg-gradient-to-r from-cyan-400 to-teal-600 flex items-center justify-center'>
+                    <FontAwesomeIcon icon={faRectangleList} className='w-14 h-14' />
+                  </div>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ad delectus nulla perspiciatis sapiente assumenda doloremque consectetur, debitis modi dolores iusto tenetur. Atque neque vel dicta? Ab, dicta alias? Sapiente!
+                  </p>
+                </li>
+                <li className='flex items-center gap-10'>
+                  <div className='shrink-0 w-28 h-28 rounded-full bg-gradient-to-r from-cyan-400 to-teal-600 flex items-center justify-center'>
+                    <FontAwesomeIcon icon={faMoneyBill1} className='w-14 h-14' />
+                  </div>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ad delectus nulla perspiciatis sapiente assumenda doloremque consectetur, debitis modi dolores iusto tenetur. Atque neque vel dicta? Ab, dicta alias? Sapiente!
+                  </p>
+                </li>
+                <li className='flex items-center gap-10'>
+                  <div className='shrink-0 w-28 h-28 rounded-full bg-gradient-to-r from-cyan-400 to-teal-600 flex items-center justify-center'>
+                    <FontAwesomeIcon icon={faUser} className='w-14 h-14' />
+                  </div>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam ad delectus nulla perspiciatis sapiente assumenda doloremque consectetur, debitis modi dolores iusto tenetur. Atque neque vel dicta? Ab, dicta alias? Sapiente!
+                  </p>
+                </li>
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* sign up */}
+        <div className='w-full py-28 px-32 bg-gradient-to-br from-gray-900 to-slate-700 text-white flex flex-col justify-center items-center'>
+          <h2 className='font-semibold lg:text-5xl text-3xl tracking-wider mb-12'>Interested?</h2>
+          <Button>
+            Sign Up! &rarr;
+          </Button>
         </div>
       </main>
     </>
