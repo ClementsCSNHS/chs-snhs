@@ -128,7 +128,7 @@ export default function Home() {
         </div>
 
         {/* updates */}
-        <div className='w-full py-28 px-32 bg-gradient-to-br from-gray-900 to-slate-700 text-white flex justify-center items-center'>
+        <div className='w-full pt-28 px-32 bg-gradient-to-br from-gray-900 to-slate-700 text-white flex justify-center items-center'>
           <div className='max-w-screen-xl grow flex flex-row gap-10'>
             <div className='flex flex-col gap-10 items-center grow'>
               <h2 className='font-semibold lg:text-5xl text-3xl tracking-wider mb-8'>
@@ -173,7 +173,9 @@ export default function Home() {
         </div>
 
         {/* sign up */}
-        <div className='w-full py-28 px-32 bg-gradient-to-br from-gray-900 to-slate-700 text-white flex flex-col justify-center items-center'>
+        <div className='w-full py-28 bg-gradient-to-tr from-gray-900 to-slate-700 text-white flex flex-col justify-center items-center'>
+          <div className='w-11/12 border-t-2 border-white mb-28'></div>
+
           <h2 className='font-semibold lg:text-5xl text-3xl tracking-wider mb-12'>Interested?</h2>
           <Button>
             Sign Up! &rarr;
