@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function events() {
   return (
-    <div className='w-full bg-gradient-to-br from-gray-900 to-slate-700 text-white h-screen px-10 py-36 flex items-center justify-center flex-col gap-24'>
+    <div className='w-full bg-gradient-to-br from-gray-900 to-slate-700 text-white h-screen px-10 py-40 flex items-center justify-center flex-col gap-24'>
       <h2 className='text-7xl font-bold'>2022-2023 EVENTS</h2>
       <div className='max-w-screen-xl grow h-10 w-full flex flex-col items-center gap-24'>
         <p className='text-xl'>We have many exciting events planned for all of you this year!
