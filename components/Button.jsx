@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react"
 
 export default function Button({ children }) {
   return (
-    <button className='w-fit bg-cyan-700 hover:bg-cyan-800 text-white font-bold text-md py-4 px-12 rounded-lg tracking-widest duration-300'>{children}</button>
+    <button className="text-md w-fit rounded-lg bg-cyan-700 px-12 py-4 font-bold tracking-widest text-white duration-300 hover:bg-cyan-800">
+      {children}
+    </button>
   )
 }
