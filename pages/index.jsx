@@ -133,7 +133,10 @@ export default function Home() {
               research. We aim to empower others to lead future innovation
               through academic ventures and community service.
             </p>
-            <Button>LEARN MORE &rarr;</Button>
+
+            <Link href="/about_us">
+              <Button>LEARN MORE &rarr;</Button>
+            </Link>
           </div>
         </div>
 
@@ -141,7 +144,7 @@ export default function Home() {
         <div className="flex w-full items-center justify-center bg-gradient-to-br from-gray-900 to-slate-700 px-10 pt-28 text-white">
           <div className="flex max-w-screen-xl grow flex-row gap-10">
             <div className="flex grow flex-col items-center gap-10">
-              <h2 className="mb-8 text-3xl font-semibold tracking-wider lg:text-5xl">
+              <h2 className="mb-8 text-5xl font-semibold tracking-wider lg:text-7xl">
                 UPDATES
               </h2>
               <ul className="flex flex-col gap-10 text-left text-lg lg:text-xl">
