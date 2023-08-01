@@ -112,11 +112,11 @@ export default function Home() {
             }}
           />
         </div>
-        <div className="flex h-screen w-full flex-col items-center justify-center gap-12">
-          <h1 className="text-5xl font-bold text-white md:text-7xl lg:text-9xl">
+        <div className="flex h-[28rem] w-full flex-col items-center justify-center gap-6 px-6 sm:h-screen sm:gap-12">
+          <h1 className="text-5xl font-bold text-white sm:text-7xl lg:text-9xl">
             Clements SNHS
           </h1>
-          <Link href="/events">
+          <Link href="/events" className="w-fit">
             <Button>EVENTS &rarr;</Button>
           </Link>
         </div>
@@ -132,17 +132,17 @@ export default function Home() {
               through academic ventures and community service.
             </p>
 
-            <Link href="/about_us">
+            <Link href="/about_us" className="w-fit">
               <Button>LEARN MORE &rarr;</Button>
             </Link>
           </div>
         </div>
 
         {/* updates */}
-        <div className="flex w-full items-center justify-center bg-gradient-to-br from-gray-900 to-slate-700 px-10 pt-28 text-white">
-          <div className="flex max-w-screen-xl grow flex-row gap-10">
+        <div className="flex w-full items-center justify-center bg-gradient-to-br from-gray-900 to-slate-700 px-6 pt-28 text-white">
+          <div className="flex max-w-screen-2xl grow flex-row gap-10">
             <div className="flex grow flex-col items-center gap-10">
-              <h2 className="mb-8 text-5xl font-semibold tracking-wider lg:text-7xl">
+              <h2 className="mb-8 text-5xl font-semibold lg:text-7xl">
                 UPDATES
               </h2>
               <ul className="flex flex-col gap-10 text-left text-lg lg:text-xl">
@@ -202,10 +202,10 @@ export default function Home() {
         </div>
 
         {/* sign up */}
-        <div className="flex w-full flex-col items-center justify-center bg-gradient-to-tr from-gray-900 to-slate-700 py-28 text-white">
-          <div className="mb-28 w-11/12 border-t-2 border-white"></div>
+        <div className="flex w-full flex-col items-center justify-center bg-gradient-to-tr from-gray-900 to-slate-700 px-6 py-28 text-white">
+          <div className="mx-6 mb-28 w-full border-t-2 border-white"></div>
 
-          <h2 className="mb-12 text-3xl font-semibold tracking-wider lg:text-5xl">
+          <h2 className="mb-6 text-3xl font-semibold sm:mb-12 sm:text-5xl">
             Interested?
           </h2>
           <Button>Sign Up! &rarr;</Button>
