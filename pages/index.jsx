@@ -1,7 +1,9 @@
-import Head from "next/head"
-import Image from "next/image"
-import Button from "@/components/Button"
 import { useCallback } from "react"
+import Head from "next/head"
+import Link from "next/link"
+
+import Button from "@/components/Button"
+
 import Particles from "react-particles"
 import { loadFull } from "tsparticles"
 
@@ -13,10 +15,6 @@ import {
   faRectangleList,
   faUser,
 } from "@fortawesome/free-regular-svg-icons"
-
-// images
-import AboutBg from "../assets/Home/about_bg.jpg"
-import Link from "next/link"
 
 export default function Home() {
   const particlesInit = useCallback(async (engine) => {
