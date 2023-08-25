@@ -58,7 +58,7 @@ export default function about_us() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex w-full flex-col items-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-6 py-40 text-white">
+      <div className="flex w-full flex-col items-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-10 py-40 text-white">
         <h2 className="text-5xl font-bold md:text-7xl">About Us</h2>
         <div className="flex w-full max-w-screen-xl grow flex-col gap-12 text-xl">
           <ul>

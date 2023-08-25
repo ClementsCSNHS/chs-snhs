@@ -14,7 +14,7 @@ export default function events() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex w-full flex-col items-center justify-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-6 pb-36 pt-40 text-white">
+      <div className="flex w-full flex-col items-center justify-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-10 pb-36 pt-40 text-white">
         <h2 className="text-5xl font-bold md:text-7xl">2022-2023 EVENTS</h2>
         <div className="flex w-full max-w-screen-xl grow flex-col items-center gap-12">
           <p className="text-xl">
