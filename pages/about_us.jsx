@@ -58,33 +58,33 @@ export default function about_us() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex w-full flex-col items-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-10 py-40 text-white">
+      <div className="flex w-full flex-col items-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-6 py-40 text-white">
         <h2 className="text-5xl font-bold md:text-7xl">About Us</h2>
         <div className="flex w-full max-w-screen-xl grow flex-col gap-12 text-xl">
           <ul>
             <li className="mb-1">
               <b>Co-Presidents: </b>
-              xxx
+              Aryan Arora, Rishi Prabhu
             </li>
             <li className="mb-1">
               <b>Vice President: </b>
-              xxx
+              Justin Zhou
             </li>
             <li className="mb-1">
               <b>Outreach Coordinators: </b>
-              xxx
+              Bryant Wu, Shagnika Paul
             </li>
             <li className="mb-1">
               <b>Webmaster/Historian: </b>
-              xxx
+              Mythily Kalra
             </li>
             <li className="mb-1">
               <b>Volunteering Coordinators: </b>
-              xxx
+              Wendy Wu, Kavya Vaidyanathan
             </li>
             <li>
               <b>Member Services Coordinator: </b>
-              xxx
+              Justin Xu
             </li>
           </ul>
           <p>

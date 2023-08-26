@@ -27,8 +27,9 @@ export default function points() {
           </p>
           <Expand />
           <iframe
-            className="h-[70vh] w-full max-w-3xl grow"
-            src="https://docs.google.com/document/d/e/2PACX-1vTVwNqpaoK5OH6q3V2WnZ3TGi13Lj4uI3cSCnLZvecBhkKCq2KOxRlK071FXWjWEfWKtRAn-EBUU6YK/pub?embedded=true"
+            className="h-[500px] w-full grow"
+            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS9LgQjunMj7pJfCooFJ6Mb5iet8cAIq3ikMJIVzjh_86LDCc2kBjjyfEr4xgZAOgsKk5vJG9_oltIY/pubhtml?widget=true"
+            loading="lazy"
           ></iframe>
         </div>
       </div>

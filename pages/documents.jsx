@@ -11,13 +11,13 @@ export default function documents() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex w-full flex-col items-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-10 py-40 text-white">
+      <div className="flex w-full flex-col items-center gap-12 bg-gradient-to-br from-gray-900 to-slate-700 px-6 py-40 text-white">
         <h2 className="text-5xl font-bold md:text-7xl">
           Clements Constitution
         </h2>
         <iframe
           className="h-[700px] w-full max-w-3xl grow"
-          src="https://docs.google.com/document/d/e/2PACX-1vTVwNqpaoK5OH6q3V2WnZ3TGi13Lj4uI3cSCnLZvecBhkKCq2KOxRlK071FXWjWEfWKtRAn-EBUU6YK/pub?embedded=true"
+          src="https://docs.google.com/document/d/e/2PACX-1vTt5qw3-i6oUdgXNxpptHv6A90nMl344IahvNY8epOwHiI6OQHCgaX--tEs36t-D5yZ2XbrqhQpaG5j/pub?embedded=true"
           loading="lazy"
           height={700}
         ></iframe>

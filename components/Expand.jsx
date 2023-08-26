@@ -7,7 +7,7 @@ import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons"
 export default function Expand() {
   const [open, setOpen] = useState(false)
   return (
-    <p className="-mt-6 self-start text-xl text-gray-400 hover:cursor-pointer">
+    <div className="-mt-6 self-start text-xl text-gray-400 hover:cursor-pointer">
       <span
         onClick={() => {
           setOpen(!open)
@@ -49,6 +49,6 @@ export default function Expand() {
           science competitions.
         </div>
       )}
-    </p>
+    </div>
   )
 }

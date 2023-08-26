@@ -30,7 +30,7 @@ export default function Navbar() {
   useOutsideAlerter(wrapperRef)
   return (
     <div ref={wrapperRef}>
-      <nav className="top absolute z-30 flex w-full flex-col items-center bg-gray-900 px-10 py-4 text-xl text-white lg:bg-transparent">
+      <nav className="top absolute z-30 flex w-full flex-col items-center bg-gray-900 px-6 py-4 text-xl text-white lg:bg-transparent">
         <div className="flex w-full flex-col gap-8">
           <div className="flex grow items-center justify-between text-lg">
             <Link href="/">
@@ -66,7 +66,7 @@ export default function Navbar() {
               </Link>
             </div>
             <button
-              className="block aspect-square h-full lg:hidden"
+              className="-mr-2 block aspect-square h-full rounded-md p-2 hover:bg-gray-700 lg:hidden"
               onClick={() => setOpen(!open)}
             >
               <FontAwesomeIcon
@@ -74,15 +74,13 @@ export default function Navbar() {
                 icon={faBars}
               ></FontAwesomeIcon>
               <FontAwesomeIcon
-                className={`-mt-1 h-6 w-6 fill-white ${
-                  open ? "block" : "hidden"
-                }`}
+                className={`h-6 w-6 fill-white ${open ? "block" : "hidden"}`}
                 icon={faXmark}
               ></FontAwesomeIcon>
             </button>
           </div>
           <div
-            className={`flex flex-col gap-4 text-lg lg:hidden ${
+            className={`mb-3 flex flex-col gap-4 text-lg lg:hidden ${
               open ? "block" : "hidden"
             }`}
           >
